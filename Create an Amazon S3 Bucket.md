@@ -78,7 +78,6 @@ The General purpose one is used in most cases and is what this demo is using.
 
 <img src="https://github.com/user-attachments/assets/b10c7044-6d7e-4fc7-a3c2-6b30d55647b8" alt="Tip icon" width="50" height="50" style="vertical-align: middle;">
 
-
 Tip: - Bucket names **must** be unique across all AWS accounts in all the AWS Regions within a partition.
 
 - A bucket name can't be used by another AWS account until the bucket is deleted.
@@ -94,6 +93,8 @@ It is recommended that ACLs are disabled and use bucket and/or IAM policies to c
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/7d0ae9fa-ca79-4335-abbd-3aaaae10bd41/ascreenshot.jpeg?tl_px=0,351&br_px=2752,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=377,321)
 
 <br>
+<img src="https://github.com/user-attachments/assets/967ad973-e8bf-4d94-bd3b-90ea104e1dc6" alt="Tip icon" width="240" height="100" style="vertical-align: middle;">
+
 
 2.5. Each bucket and object has an ACL attached to it and defines AWS accounts or groups are granted access and what type of access.
 
@@ -124,6 +125,8 @@ Versioning is used to keep multiple versions of an object.
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/dcb7c6bd-fa93-43d5-9e2d-e9c5fa1cee10/ascreenshot.jpeg?tl_px=0,351&br_px=2752,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=133,401)
 
 <br>
+<img src="https://github.com/user-attachments/assets/967ad973-e8bf-4d94-bd3b-90ea104e1dc6" alt="Tip icon" width="240" height="100" style="vertical-align: middle;">
+
 
 2.8. Benefits of using versioning
 
@@ -156,6 +159,8 @@ Tags are not required but is a best practice as as part of building a Well-Archi
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/4afa56fe-9e5d-491b-9ab7-e842a8a30645/ascreenshot.jpeg?tl_px=0,136&br_px=2752,1675&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=140,277)
 
 <br>
+<img src="https://github.com/user-attachments/assets/967ad973-e8bf-4d94-bd3b-90ea104e1dc6" alt="Tip icon" width="240" height="100" style="vertical-align: middle;">
+
 
 2.11. Tags can be added to new objects as they are uploaded or can be added to existing objects as needed.
 
@@ -163,7 +168,7 @@ Some basic rules regarding tags
 
 - You can add up to 10 tags to an object.
 - Tags associated with an object must have unique tag keys
-- Tags are case sensitive. White space also counts as a character
+- Tags are case-sensitive. White space also counts as a character
 
 Learn more at <https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagging.html>
 
@@ -178,13 +183,14 @@ Learn more at <https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagg
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/a054a873-df20-4d82-9549-d2aeba68df1f/ascreenshot.jpeg?tl_px=0,85&br_px=2752,1624&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=460,277)
 
 <br>
+<img src="https://github.com/user-attachments/assets/967ad973-e8bf-4d94-bd3b-90ea104e1dc6" alt="Tip icon" width="240" height="100" style="vertical-align: middle;">
 
 2.13. In January 2023, Amazon began encrypting S3 buckets by default. New objects are automatically encrypted by using server-side encryption with Amazon S3 managed keys (SSE-S3) and is at no cost.
 
 If an organization needs more control over encryption keys such as managing key rotation and access policy grant (due to organizational requirements, compliance, etc.), the following presents additional choices.
 
 - Server-side encryption with AWS Key Management Service keys (SSE-KMS)
-- Dual-layer server side encryption with AWS Key Management Service keys (DSSE-KMS)
+- Dual-layer server-side encryption with AWS Key Management Service keys (DSSE-KMS)
 
 Server-side encryption with customer-provided keys (SSE-C) is not supported for default encryption.
 
@@ -208,7 +214,7 @@ When using SSE-KMS, you can add an S3 Bucket key. Bucket keys can decrease the c
 
 <br>
 
-2.17. If you bucket was created successfully, a green batter will appear at the top of the screen. 
+2.17. If your bucket was created successfully, a green batter will appear at the top of the screen. 
 
 If the bucket was not successfully created, a red banner will appear instead. This red banner will provide a message to help troubleshoot.
 
@@ -227,7 +233,7 @@ If the bucket was not successfully created, a red banner will appear instead. Th
 
 <br>
 
-3.1. Objects in a bucket can be thought similarly as files you add to your local file folder or upload in other platforms such as Google Drive. The bucket - object relationships is similar to the folder-file relationship.
+3.1. Objects in a bucket can be thought of similarly as files you add to your local file folder or upload in other platforms such as Google Drive. The bucket - object relationship is similar to the folder-file relationship.
 
 <br>
 
@@ -441,6 +447,8 @@ You can click on the link to expand and view the individual block public access 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/e58cdc19-fd83-4f55-ac38-7d910febbda0/ascreenshot.jpeg?tl_px=0,79&br_px=2752,1618&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=88,277)
 
 <br>
+<img src="https://github.com/user-attachments/assets/967ad973-e8bf-4d94-bd3b-90ea104e1dc6" alt="Tip icon" width="240" height="100" style="vertical-align: middle;">
+
 
 6.7. Unchecking "Block all public access" for an S3 bucket is a significant action that should not be taken lightly. 
 
@@ -513,7 +521,7 @@ Bucket policies are used to
 
 6.15. The *Principal* is the account, user, role, or service to which the policy applies
 
-An asterisk (\*) can be used as a wildcard which allow anyone to access.
+An asterisk (\*) can be used as a wildcard which allows anyone to acces its.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/ac8e3110-96a5-4400-82e5-08e0accab3a9/ascreenshot.jpeg?tl_px=0,351&br_px=2752,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=470,316)
 
@@ -531,7 +539,7 @@ An asterisk (\*) can be used as a wildcard which allow anyone to access.
 
 <br>
 
-6.18. The **GetObject** option is used to grant permission to read (retrieve) objects from Amazon S3 bucket.
+6.18. The **GetObject** option is used to grant permission to read (retrieve) objects from the Amazon S3 bucket.
 
 To learn more about different actions, go to <https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html>
 
@@ -592,6 +600,7 @@ ARNs are used as an unique identification of AWS resource (You can compare it to
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/30894431-00e2-4289-8480-ad4308ba0ad8/ascreenshot.jpeg?tl_px=272,351&br_px=3024,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=995,522)
 
 <br>
+<img src="https://github.com/user-attachments/assets/967ad973-e8bf-4d94-bd3b-90ea104e1dc6" alt="Tip icon" width="240" height="100" style="vertical-align: middle;">
 
 6.28. **Structure of a Bucket Policy**
 
@@ -626,6 +635,7 @@ It can also be used to disable or enable ACLs
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/312ee491-afe8-4149-a80f-74b517e2e8f8/ascreenshot.jpeg?tl_px=0,0&br_px=3024,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=869,319)
 
 <br>
+<img src="https://github.com/user-attachments/assets/967ad973-e8bf-4d94-bd3b-90ea104e1dc6" alt="Tip icon" width="240" height="100" style="vertical-align: middle;">
 
 7.2. Object Ownership is set to the Bucket owner by default and all ACLs are disabled. When ACLs are disabled, the bucket owner owns all the objects in the bucket and manages access to data exclusively policies.
 
@@ -687,6 +697,8 @@ By leveraging these metrics, you can gain insights into your S3 usage, optimize 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/c2a1e917-df4f-4435-8afe-45fe7cb118e7/ascreenshot.jpeg?tl_px=0,114&br_px=2752,1653&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=423,277)
 
 <br>
+<img src="https://github.com/user-attachments/assets/967ad973-e8bf-4d94-bd3b-90ea104e1dc6" alt="Tip icon" width="240" height="100" style="vertical-align: middle;">
+
 
 8.2. Amazon S3 offers three main types of metrics:
 
@@ -708,7 +720,7 @@ By leveraging these metrics, you can gain insights into your S3 usage, optimize 
      - the maximum replication time to the destination AWS Region
      - the total number of operations that failed replication
 
-Benefits of Bucket Metrics are as follow
+The benefits of Bucket Metrics are as follows
 
 - monitor bucket usage and performance
 - identify operational issues quickly
@@ -724,6 +736,7 @@ Note - Storage class analysis only provides recommendations for Standard to Stan
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/8bed352d-c9de-443e-b475-5d2d5df767bb/ascreenshot.jpeg?tl_px=0,260&br_px=2752,1799&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=378,276)
 
 <br>
+<img src="https://github.com/user-attachments/assets/967ad973-e8bf-4d94-bd3b-90ea104e1dc6" alt="Tip icon" width="240" height="100" style="vertical-align: middle;">
 
 8.4. With **Replication Metrics**, you can monitor the progress of replication. It tracks the following
 
@@ -836,7 +849,7 @@ Lifecycle rules run once per day.
 
 
 ## Task 10 -  Replication of Objects
-
+<img src="https://github.com/user-attachments/assets/967ad973-e8bf-4d94-bd3b-90ea104e1dc6" alt="Tip icon" width="240" height="100" style="vertical-align: middle;">
 
 10.1. There are two types of replication: *live replication* and *on-demand replication*.
 

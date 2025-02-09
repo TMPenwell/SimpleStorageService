@@ -76,6 +76,8 @@ The General purpose one is used in most cases and is what this demo is using.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/7d9350f0-e589-499c-947a-9ae2f6e003ae/ascreenshot.jpeg?tl_px=0,306&br_px=2752,1845&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=462,276)
 
+<img src="https://github.com/user-attachments/assets/b10c7044-6d7e-4fc7-a3c2-6b30d55647b8" alt="Tip icon" width="50" height="50" style="vertical-align: middle;">
+
 
 Tip: - Bucket names **must** be unique across all AWS accounts in all the AWS Regions within a partition.
 

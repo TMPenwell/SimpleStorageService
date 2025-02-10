@@ -79,11 +79,10 @@ The General purpose one is used in most cases and is what this demo is using.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/7d9350f0-e589-499c-947a-9ae2f6e003ae/ascreenshot.jpeg?tl_px=0,306&br_px=2752,1845&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=462,276)
 
-<img src="https://github.com/user-attachments/assets/b10c7044-6d7e-4fc7-a3c2-6b30d55647b8" alt="Tip icon" width="50" height="50" style="vertical-align: middle;">
 
-Tip: - Bucket names **must** be unique across all AWS accounts in all the AWS Regions within a partition.
+:bulb: <mark>Tip: - Bucket names **must** be unique across all AWS accounts in all the AWS Regions within a partition.
+A bucket name can't be used by another AWS account until the bucket is deleted.</mark>
 
-- A bucket name can't be used by another AWS account until the bucket is deleted.
 ---
 <br>
 
@@ -120,6 +119,7 @@ These options provide settings for access points, buckets, and accounts to help 
 Allows you to set up centralized controls to limit public access to resources that are enforced regardless of how the resources are created.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/407a2001-7e05-4d91-8157-f3af0926f27b/ascreenshot.jpeg?tl_px=0,179&br_px=2752,1718&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=246,277)
+
 ---
 <br>
 
@@ -132,7 +132,7 @@ Versioning is used to keep multiple versions of an object.
 ---
 <br>
 <img src="https://github.com/user-attachments/assets/967ad973-e8bf-4d94-bd3b-90ea104e1dc6" alt="Learning on the Lab" width="240" height="100" style="vertical-align: middle;">
----
+
 
 **2.8.** Benefits of using versioning
 
@@ -149,17 +149,15 @@ It is important to know that once versioning is enabled, it cannot be disabled.
 Learn more about Amazon S3 version control at <https://docs.aws.amazon.com/AmazonS3/latest/userguide/versioning-workflows.html>
 
 <br>
-<img src="https://github.com/user-attachments/assets/967ad973-e8bf-4d94-bd3b-90ea104e1dc6" alt="Learning on the Lab" width="240" height="100" style="vertical-align: middle;">
----
 
-**2.9.** Remember that billing in S3 is a pay-as-you-go service and charges are based on the objects stored. The rate depends on the size of the object, how long it is stored, and the storage class. The rates apply to every version of an object that is stored. ***Each version of an object is the entire object.***
+:moneybag: Remember that billing in S3 is a pay-as-you-go service and charges are based on the objects stored. The rate depends on the size of the object, how long it is stored, and the storage class. The rates apply to every version of an object that is stored. ***Each version of an object is the entire object.***
 
-Once versioning is enabled, it cannot be disabled but can be suspended to stop creating versions as objects are overwritten or deleted.
+:bulb:<mark> Once versioning is enabled, it cannot be disabled but can be suspended to stop creating versions as objects are overwritten or deleted.</mark>
 
 ---
 <br>
 
-**2.10.** **Tags** can be added. A tag is a label consisting of a key and (optional) value to store additional data (metadata) about the resource.
+**2.9.** **Tags** can be added. A tag is a label consisting of a key and (optional) value to store additional data (metadata) about the resource.
 
 Tags can be used to filter and search for resources, monitor cost and usage, and manage the AWS environment.
 
@@ -172,7 +170,7 @@ Tags are not required but is a best practice as part of building a Well-Architec
 <img src="https://github.com/user-attachments/assets/967ad973-e8bf-4d94-bd3b-90ea104e1dc6" alt="Learning on the Lab" width="240" height="100" style="vertical-align: middle;">
 
 
-**2.11.** Tags can be added to new objects as they are uploaded or can be added to existing objects as needed.
+**2.10.** Tags can be added to new objects as they are uploaded or can be added to existing objects as needed.
 
 Some basic rules regarding tags
 
@@ -180,12 +178,12 @@ Some basic rules regarding tags
 - Tags associated with an object must have unique tag keys
 - Tags are case-sensitive. White space also counts as a character
 
-Learn more at <https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagging.html>
+:bulb:<mark>Learn more at <https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagging.html></mark>
 
 ---
 <br>
 
-**2.12.** Encryption is a best practice and is automatically applied to S3 buckets. You can customize the **Default encryption** to one of three different types.
+**2.11.** Encryption is a best practice and is automatically applied to S3 buckets. You can customize the **Default encryption** to one of three different types.
 
 - *Server-side encryption (SSE) with Amazon S3 managed keys. This is known as SS3-S3*
 - *Server-side encryption (SSE) with Amazon Key Management Service (KMS). This is known as SS3-KMS.*
@@ -197,7 +195,7 @@ Learn more at <https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagg
 <br>
 <img src="https://github.com/user-attachments/assets/967ad973-e8bf-4d94-bd3b-90ea104e1dc6" alt="Learning on the Lab" width="240" height="100" style="vertical-align: middle;">
 
-**2.13.** In January 2023, Amazon began encrypting S3 buckets by default. New objects are automatically encrypted by using server-side encryption with Amazon S3 managed keys (SSE-S3) and are at no cost.
+**2.12.** In January 2023, Amazon began encrypting S3 buckets by default. New objects are automatically encrypted by using server-side encryption with Amazon S3 managed keys (SSE-S3) and are at no cost.
 
 If an organization needs more control over encryption keys such as managing key rotation and access policy grants (due to organizational requirements, compliance, etc.), the following presents additional choices.
 
@@ -209,13 +207,13 @@ Server-side encryption with customer-provided keys (SSE-C) is not supported for 
 ---
 <br>
 
-+ Tip
-**2.14.** Objects uploaded before default encryption was enabled (January 2023) will not be encrypted.
+
+:bulb: <mark> TIP! Objects uploaded before default encryption was enabled (January 2023) will not be encrypted.</mark>
  
  
 <br>
 
-**2.15.** Make a selection on the **Bucket Key** to enable or disable.
+**2.13.** Make a selection on the **Bucket Key** to enable or disable.
 
 When using SSE-KMS, you can add an S3 Bucket key. Bucket keys can decrease the costs for S3 requests to KMS which can reduce the cost of SS3-KMS.
 
@@ -224,21 +222,22 @@ When using SSE-KMS, you can add an S3 Bucket key. Bucket keys can decrease the c
 ---
 <br>
 
-**2.16.** Click **Create bucket** to create the bucket.
+**2.14.** Click **Create bucket** to create the bucket.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/e207dab5-09f5-4109-b461-f34c0383cb0e/ascreenshot.jpeg?tl_px=272,351&br_px=3024,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=991,519)
 
 ---
 <br>
 
-**2.17.** If your bucket was created successfully, a green batter will appear at the top of the screen. 
+**2.15.** If your bucket was created successfully, a green batter will appear at the top of the screen. 
 
 If the bucket was not successfully created, a red banner will appear instead. This red banner will provide a message to help troubleshoot.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/752a2441-98ba-49d5-bc0d-b85f16a62eef/ascreenshot.jpeg?tl_px=272,0&br_px=3024,1538&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=991,178)
 
+---
 
-### Reviewing the Bucket
+### Reviewing the Bucket :bucket:	
 
 
  With the newly created bucket, we see there are tabs and other options to use this storage service.
@@ -251,7 +250,7 @@ If the bucket was not successfully created, a red banner will appear instead. Th
 
 <br>
 
-**3.1.** Objects in a bucket can be thought of similarly as files you add to your local file folder or upload to other platforms such as Google Drive. The bucket-object relationship is similar to the folder-file relationship.
+:bulb: <mark>Objects in a bucket can be thought of similarly as files you add to your local file folder or upload to other platforms such as Google Drive. The bucket-object relationship is similar to the folder-file relationship.</mark>
 
 <br>
 
@@ -316,7 +315,7 @@ If the bucket was not successfully created, a red banner will appear instead. Th
 ---
 <br>
 
-**3.9.** Explore the additional options available for the bucket. Begin with the first one - Metadata.
+**3.9.** Explore the additional options available for the bucket. Begin with the first one - **Metadata**.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/2fb15984-4e71-4f17-834f-d511e4bbe708/ascreenshot.jpeg?tl_px=0,0&br_px=2752,1538&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=104,226)
 
@@ -343,7 +342,7 @@ Some things to note about the Metadata Tables schema
 
 <br>
 
-**5.1.** The **Properties** tab includes options to information about the bucket. Information found in this tab includes the following
+**5.1.** The **Properties** tab includes options for information about the bucket. Information found in this tab includes the following
 
 - AWS Region
 - Amazon Resource Name (ARN)
@@ -400,7 +399,7 @@ Select **Create configuration**
    - objects are moved here after a minimum of 180 days of no access
    - provides savings up to 95% compared to standard storage costs.
 
-Learn more at <https://aws.amazon.com/getting-started/hands-on/getting-started-using-amazon-s3-intelligent-tiering/>
+:bulb: <mark>Learn more at <https://aws.amazon.com/getting-started/hands-on/getting-started-using-amazon-s3-intelligent-tiering/></mark>
 
 ---
 <br>
@@ -443,25 +442,21 @@ Click **Create**
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/1b74de3f-6e81-4425-b7d7-44dfc018d0fe/ascreenshot.jpeg?tl_px=0,0&br_px=2752,1538&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=261,131)
 
-
+---
 ## Task 6 -  Permission Options
 
----
 <br>
 
 **6.1.** Next, you will go to the **Permissions** tab
+
+The Permissions tab in an S3 bucket is used for managing access control and security settings.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/cf4824d0-b9f4-4000-b28c-ac7c0a8c9131/ascreenshot.jpeg?tl_px=0,0&br_px=2752,1538&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=283,229)
 
 ---
 <br>
 
-**6.2.** The Permissions tab in an S3 bucket is used for managing access control and security settings.
-
----
-<br>
-
-**6.3.** Recall that when this bucket was created, the default settings were left on that blocked all public access.
+**6.2.** Recall that when this bucket was created, the default settings were left on that blocked all public access.
 
 You can click on the link to expand and view the individual block public access settings for the bucket.
 
@@ -470,21 +465,21 @@ You can click on the link to expand and view the individual block public access 
 ---
 <br>
 
-**6.4.** You can customize the level of access for the bucket at a granular level based on the same options as provided when you first created the bucket.
+**6.3.** You can customize the level of access for the bucket at a granular level based on the same options as provided when you first created the bucket.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/edb85923-315d-45a5-af21-4d5cadd5f197/ascreenshot.jpeg?tl_px=272,204&br_px=3024,1743&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=526,276)
 
 ---
 <br>
 
-**6.5.** To edit these bucket settings, click on the **Edit** button
+**6.4.** To edit these bucket settings, click on the **Edit** button
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/f0de770e-a31c-4c4d-8c37-dfcf8373de64/ascreenshot.jpeg?tl_px=272,0&br_px=3024,1538&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=1014,230)
 
 ---
 <br>
 
-**6.6.** This bucket contains images that we want publicly accessible so uncheck the box that says *Block all public access.* This removes a layer of security of who can access the bucket.
+**6.5.** This bucket contains images that we want publicly accessible so uncheck the box that says *Block all public access.* This removes a layer of security of who can access the bucket.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/e58cdc19-fd83-4f55-ac38-7d910febbda0/ascreenshot.jpeg?tl_px=0,79&br_px=2752,1618&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=88,277)
 
@@ -493,43 +488,43 @@ You can click on the link to expand and view the individual block public access 
 
 <img src="https://github.com/user-attachments/assets/967ad973-e8bf-4d94-bd3b-90ea104e1dc6" alt="Learning on the Lab" width="240" height="100" style="vertical-align: middle;">
 
-**6.7.** Unchecking "Block all public access" for an S3 bucket is a significant action that should not be taken lightly. 
+**6.6.** Unchecking "Block all public access" for an S3 bucket is a significant action that should not be taken lightly. 
 
 The "Block all public access" feature was introduced by AWS as a safeguard against the frequent occurrences of data leaks due to misconfigured S3 buckets\[. Disabling it removes this safeguard, so it should only be done with a clear understanding of the potential risks and a strong plan for managing access controls.
 
-Important considerations when unchecking this box.
+:warning: Important considerations when unchecking this box.:arrow_down:	
 
 - Unchecking this option increases the risk of data exposure if proper access controls are not maintained.
 - It requires careful management of bucket policies and object permissions to ensure only intended data is made public.
 - Public access may be necessary for specific use cases, such as hosting a public website from an S3 bucket. 
 
-In this demo, our bucket contains images that do not require this depth of security and we want available to the public.
+In this demo, our bucket contains images that do not require this depth of security and we want them available to the public.
 
 ---
 <br>
 
-**6.8.** Click **Save changes**
+**6.7.** Click **Save changes**
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/9ddefe1b-0142-42ac-bb1d-ce9fc6aa1d03/ascreenshot.jpeg?tl_px=272,351&br_px=3024,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=1055,410)
 
 ---
 <br>
 
-**6.9.** Follow the instructions to confirm the changes
+**6.8.** Follow the instructions to confirm the changes
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/7da48fa3-bb18-4f70-ac04-b33df0bc2385/ascreenshot.jpeg?tl_px=272,351&br_px=3024,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=566,300)
 
 ---
 <br>
 
-**6.10.** The green banner at the top of the screen confirms the changes were made successfully.
+**6.9.** The green banner at the top of the screen confirms the changes were made successfully.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/3d22be47-c070-4862-9267-8d01a7e75e79/ascreenshot.jpeg?tl_px=272,0&br_px=3024,1538&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=1043,178)
 
 ---
 <br>
 
-**6.11.** To allow the appropriate access to this bucket, a **Bucket policy** is required. Select the *Edit* button.
+**6.10.** To allow the appropriate access to this bucket, a **Bucket policy** is required. Select the *Edit* button.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/82e7452d-7358-423e-8924-009d98720019/ascreenshot.jpeg?tl_px=0,0&br_px=3024,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=959,260)
 
@@ -538,7 +533,7 @@ In this demo, our bucket contains images that do not require this depth of secur
 
 <img src="https://github.com/user-attachments/assets/967ad973-e8bf-4d94-bd3b-90ea104e1dc6" alt="Learning on the Lab" width="240" height="100" style="vertical-align: middle;">
 
-**6.12.** A bucket policy is a resource-based policy that you can use to grant access permissions to your Amazon S3 bucket and the objects in it.
+**6.11.** A bucket policy is a resource-based policy that you can use to grant access permissions to your Amazon S3 bucket and the objects in it.
 
 Bucket policies are written in JSON and provide fine-grained control over S3 resources.
 
@@ -558,21 +553,21 @@ Bucket policies are used to
 ---
 <br>
 
-**6.13.** There are a few different ways that you can write the policy.  In this demo, you will click on **Policy generator** which will open a separate tab.
+**6.12.** There are a few different ways that you can write the policy.  In this demo, you will click on **Policy generator** which will open a separate tab.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/3a3aaec8-42c0-4bcd-9121-36b95c958795/ascreenshot.jpeg?tl_px=272,0&br_px=3024,1538&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=963,200)
 
 ---
 <br>
 
-**6.14.** For **Select Type of Policy** select *S3 Bucket Policy*
+**6.13.** For **Select Type of Policy** select *S3 Bucket Policy*
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/5ff41a6b-747d-4ee6-9813-41a04e4593f8/ascreenshot.jpeg?tl_px=0,137&br_px=2752,1676&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=498,276)
 
 ---
 <br>
 
-**6.15.** The *Principal* is the account, user, role, or service to which the policy applies
+**6.14.** The *Principal* is the account, user, role, or service to which the policy applies
 
 An asterisk (\*) can be used as a wildcard which allows anyone to access it.
 
@@ -581,86 +576,86 @@ An asterisk (\*) can be used as a wildcard which allows anyone to access it.
 ---
 <br>
 
-**6.16.** The **Actions** are used to identify what actions the principal can do.
+**6.15.** The **Actions** are used to identify what actions the principal can do.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/7b4dfb2a-23bd-43d5-bd79-bde79b2c93e4/ascreenshot.jpeg?tl_px=0,351&br_px=2752,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=519,399)
 
 ---
 <br>
 
-**6.17.** Search for and select the **GetObject** option.
+**6.16.** Search for and select the **GetObject** option.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/35a949d3-187c-4e26-9dd8-6efe77c5d7e4/ascreenshot.jpeg?tl_px=0,351&br_px=2752,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=456,449)
 
 ---
 <br>
 
-**6.18.** The **GetObject** option is used to grant permission to read (retrieve) objects from the Amazon S3 bucket.
+**6.17.** The **GetObject** option is used to grant permission to read (retrieve) objects from the Amazon S3 bucket.
 
-To learn more about different actions, go to <https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html>
+:bulb: <mark>To learn more about different actions, go to <https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html></mark>
 
 ---
 <br>
 
-**6.19.** The **Amazon Resource Name (ARN)** is used as a unique identifier for AWS resources and services. 
+**6.18.** The **Amazon Resource Name (ARN)** is used as a unique identifier for AWS resources and services. 
 
-ARNs are used as a unique identification of AWS resources (You can compare it to your social security number. It provides a unique identification of your identity.)
+:bulb: <mark>ARNs are used as a unique identification of AWS resources (You can compare it to your social security number. It provides a unique identification of your identity.)</mark>
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/7d2dbcb3-fb47-4d73-bbdc-fd2af03936a9/ascreenshot.jpeg?tl_px=0,351&br_px=2752,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=417,432)
 
 ---
 <br>
 
-**6.20.** To find the ARN for this bucket, go back to the S3 console.
+**6.19.** To find the ARN for this bucket, go back to the S3 console.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/715721e3-0b6b-473d-b78a-5c1ee0466d1d/ascreenshot.jpeg?tl_px=0,0&br_px=2752,1538&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=169,5)
 
 ---
 <br>
 
-**6.21.** Find the **Bucket ARN** and copy the arn code
+**6.20.** Find the **Bucket ARN** and copy the arn code
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/7edc2a95-15de-4ba3-a8ce-d82c3148f405/ascreenshot.jpeg?tl_px=0,13&br_px=2752,1552&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=12,277)
 
 ---
 <br>
 
-**6.22.** Back in the Policy Generator tab, paste the copied ARN into the ARN text box and click **Add Statement**
+**6.21.** Back in the Policy Generator tab, paste the copied ARN into the ARN text box and click **Add Statement**
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/7615b3d1-916a-4fb1-9fef-58dc97419cd4/ascreenshot.jpeg?tl_px=0,351&br_px=2752,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=463,520)
 
 ---
 <br>
 
-**6.23.** To create the policy, click **Generate Policy**
+**6.22.** To create the policy, click **Generate Policy**
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/d154a62e-b404-428e-a1ce-80787ee6cee0/ascreenshot.jpeg?tl_px=0,351&br_px=2752,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=467,410)
 
 ---
 <br>
 
-**6.24.** A policy written in JSON is available to be copied.
+**6.23.** A policy written in JSON is available to be copied.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/8d7c68e2-acb5-4125-a0ef-6537672dc515/ascreenshot.jpeg?tl_px=0,0&br_px=2752,1538&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=278,273)
 
 ---
 <br>
 
-**6.25.** Paste the copied JSON code into the Policy window
+**6.24.** Paste the copied JSON code into the Policy window
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/e8a8955f-83d1-4704-8be8-99bf5bbd456c/ascreenshot.jpeg?tl_px=0,351&br_px=2752,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=347,377)
 
 ---
 <br>
 
-**6.26.** The **Resource** is not yet complete. You need to specify which object(s) in the bucket are accessible in this policy.  If all objects should be accessible, you can use the wildcard by adding a /\* as shown below.
+**6.25.** The **Resource** is not yet complete. You need to specify which object(s) in the bucket are accessible in this policy.  If all objects should be accessible, you can use the wildcard by adding a /\* as shown below.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/94cf0f5f-491d-41ca-83b6-334b7c7f1732/ascreenshot.jpeg?tl_px=0,351&br_px=2752,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=470,458)
 
 ---
 <br>
 
-**6.27.** Click **Save changes**
+**6.26.** Click **Save changes**
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/30894431-00e2-4289-8480-ad4308ba0ad8/ascreenshot.jpeg?tl_px=272,351&br_px=3024,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=995,522)
 
@@ -668,7 +663,7 @@ ARNs are used as a unique identification of AWS resources (You can compare it to
 <br>
 <img src="https://github.com/user-attachments/assets/967ad973-e8bf-4d94-bd3b-90ea104e1dc6" alt="Learning on the Lab" width="240" height="100" style="vertical-align: middle;">
 
-**6.28.** **Structure of a Bucket Policy**
+**6.27.** **Structure of a Bucket Policy**
 
 A typical bucket policy includes the following elements:
 
@@ -682,12 +677,12 @@ A typical bucket policy includes the following elements:
   - *Resource*: The bucket and object resources to which the actions apply
   - *Condition*: Optional conditions for when this policy is in effect
 
-Bucket policies should be carefully crafted to avoid unintended access or security vulnerabilities.
+:warning: Bucket policies should be carefully crafted to avoid unintended access or security vulnerabilities.
 
 ---
 <br>
 
-**6.29.** A green banner appears confirming changes were made successfully.
+**6.28.** A green banner appears confirming changes were made successfully.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/16371d50-a350-4784-8119-341de302e4bb/ascreenshot.jpeg?tl_px=272,0&br_px=3024,1538&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=1049,175)
 
@@ -722,7 +717,7 @@ Object Ownership has three settings that you can use to control ownership of obj
 
 **7.3.** **Access control list (ACL)** are used to manage access to buckets and objects. 
 
-Note - Most modern use cases in Amazon S3 no longer require the use of ACLs and are disabled by default per recommended best practices. It is recommended that IAM or bucket policies are used to control access to objects in the bucket.
+🗒️ Note - Most modern use cases in Amazon S3 no longer require the use of ACLs and are disabled by default per recommended best practices. It is recommended that IAM or bucket policies are used to control access to objects in the bucket.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/62882a9f-1a02-448c-9543-bd9591e6e603/ascreenshot.jpeg?tl_px=0,0&br_px=3024,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=858,315)
 
@@ -737,6 +732,8 @@ You see that bucket has the bucket owner enforcement applied to it.
 
 ---
 <br>
+<img src="https://github.com/user-attachments/assets/967ad973-e8bf-4d94-bd3b-90ea104e1dc6" alt="Learning on the Lab" width="240" height="100" style="vertical-align: middle;">
+
 
 **7.5.** The Grantee information in Amazon S3 ACLs refers to the entity (user, account, or predefined group) that is granted specific permissions.
 
@@ -751,10 +748,12 @@ When ACLs are disabled in Amazon S3, permissions are still granted through bucke
 
 ---
 <br>
+<img src="https://github.com/user-attachments/assets/967ad973-e8bf-4d94-bd3b-90ea104e1dc6" alt="Learning on the Lab" width="240" height="100" style="vertical-align: middle;">
+
 
 **7.7.** Cross-Origin Resource Sharing (CORS) is an important security feature implemented by web browsers to protect users from potentially malicious cross-origin requests.
 
-Amazon S3 supports CORS configuration for buckets, allowing you to control which web applications can access your S3 resources. This is useful when hosting static websites on S3 or when building a client-side web applications that interact with S3 buckets.
+Amazon S3 supports CORS configuration for buckets, allowing you to control which web applications can access your S3 resources. This is useful when hosting static websites on S3 or when building client-side web applications that interact with S3 buckets.
 
 **Benefits of CORS**
 
@@ -810,13 +809,13 @@ The benefits of Bucket Metrics are as follows
 
 **8.3.** The **Storage Class Analysis** is used to analyze storage access patterns. This helps you decide when to transition the right data to the right storage class.
 
-Note - Storage class analysis only provides recommendations for Standard to Standard IA classes.
+🗒️Note - Storage class analysis only provides recommendations for Standard to Standard IA classes.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/8bed352d-c9de-443e-b475-5d2d5df767bb/ascreenshot.jpeg?tl_px=0,260&br_px=2752,1799&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=378,276)
 
 ---
 <br>
-<img src="https://github.com/user-attachments/assets/967ad973-e8bf-4d94-bd3b-90ea104e1dc6" alt="Tip icon" width="240" height="100" style="vertical-align: middle;">
+<img src="https://github.com/user-attachments/assets/967ad973-e8bf-4d94-bd3b-90ea104e1dc6" alt="Learning on the Lab" width="240" height="100" style="vertical-align: middle;">
 
 **8.4.** With **Replication Metrics**, you can monitor the progress of replication. It tracks the following
 
@@ -833,21 +832,20 @@ Note - Storage class analysis only provides recommendations for Standard to Stan
 
 **9.1.** Click on the **Management** tab provides options for configuring various aspects of bucket management and optimization
 
-![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/2d6beb75-1fe5-4a40-821e-db5d08b2b56a/ascreenshot.jpeg?tl_px=0,0&br_px=2752,1538&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=483,230)
-
----
-<br>
-
-**9.2.** In the Management tab you will be able to configure the following
+In the Management tab you will be able to configure the following
 
 - lifecycle rules
 - replication rules
 - inventory configurations
 
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/2d6beb75-1fe5-4a40-821e-db5d08b2b56a/ascreenshot.jpeg?tl_px=0,0&br_px=2752,1538&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=483,230)
+
+
+
 ---
 <br>
 
-**9.3.** Under Management, the **Lifecycle configuration** is used to create a set of rules that define actions that Amazon S3 applies to a group of objects. 
+**9.2.** Under Management, the **Lifecycle configuration** is used to create a set of rules that define actions that Amazon S3 applies to a group of objects. 
 
 Lifecycle rules run once per day.
 
@@ -856,21 +854,21 @@ Lifecycle rules run once per day.
 ---
 <br>
 
-**9.4.** To create a lifecycle rule, click **Create lifecycle rule**
+**9.3.** To create a lifecycle rule, click **Create lifecycle rule**
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/ab84bfcb-0d90-4b03-a22c-9fed56d35fa2/ascreenshot.jpeg?tl_px=272,254&br_px=3024,1793&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=941,277)
 
 ---
 <br>
 
-**9.5.** Provide a descriptive name for the lifecycle rule.
+**9.4.** Provide a descriptive name for the lifecycle rule.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/67686d2d-c885-48d4-ac14-3e1b1e534f94/ascreenshot.jpeg?tl_px=253,27&br_px=3005,1566&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=524,277)
 
 ---
 <br>
 
-**9.6.** **Choose a rule scope** based on need. Options include
+**9.5.** **Choose a rule scope** based on need. Options include
 
 *Limit the scope of this rule using one or more filters* is used to limit to all objects with a specific prefix or tag.
 
@@ -881,63 +879,63 @@ Lifecycle rules run once per day.
 ---
 <br>
 
-**9.7.** Confirm as necessary
+**9.6.** Confirm as necessary
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/f44e6928-2201-419b-b146-1989ad66210c/ascreenshot.jpeg?tl_px=0,319&br_px=2752,1858&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=41,276)
 
 ---
 <br>
 
-**9.8.** **Lifecycle rule actions** are used to set the actions that this rule policy will perform.
+**9.7.** **Lifecycle rule actions** are used to set the actions that this rule policy will perform.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/1f1c35e2-5eec-407b-9b8e-0d455cfdae00/ascreenshot.jpeg?tl_px=0,147&br_px=2752,1686&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=3,277)
 
 ---
 <br>
 
-**9.9.** Confirm changes
+**9.8.** Confirm changes
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/85c27315-aea3-4b17-8303-d1a4c3b6ca78/ascreenshot.jpeg?tl_px=0,351&br_px=2752,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=38,295)
 
 ---
 <br>
 
-**9.10.** **Transition current version of objects between storage classes** is used to move the current version of objects.
+**9.9.** **Transition current version of objects between storage classes** is used to move the current version of objects.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/30e4238e-f8f3-401c-813e-05ea8ba7e85e/ascreenshot.jpeg?tl_px=0,351&br_px=2752,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=487,303)
 
 ---
 <br>
 
-**9.11.** **Transition noncurrent versions of objects between storage classes** is used to move the previous (noncurrent) versions of an object.
+**9.10.** **Transition noncurrent versions of objects between storage classes** is used to move the previous (noncurrent) versions of an object.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/f1f01679-d0de-436c-a93f-6eccb6528b40/ascreenshot.jpeg?tl_px=0,351&br_px=2752,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=368,284)
 
 ---
 <br>
 
-**9.12.** Set the days as appropriate based on needs. Remember that multiple versions will increase your usage of the storage service and your bill.
+**9.11.** Set the days as appropriate based on needs. Remember that multiple versions will increase your usage of the storage service and your bill.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/2c8ee6f1-72e1-4294-9404-873024b99ab9/ascreenshot.jpeg?tl_px=0,351&br_px=2752,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=412,318)
 
 ---
 <br>
 
-**9.13.** Click **Create rule**
+**9.12.** Click **Create rule**
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/b260bd04-546f-4f9a-8f5c-5cb5e7b8ebd7/ascreenshot.jpeg?tl_px=754,621&br_px=3023,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=1017,511)
 
 ---
 <br>
 
-**9.14.** Green banner confirms the rule was created.
+**9.13.** The green banner confirms the rule was created.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/80a180ee-99eb-4ce4-b4c8-b4b19bca2d6a/ascreenshot.jpeg?tl_px=272,0&br_px=3024,1538&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=1050,178)
 
 ---
 <br>
 
-**9.15.** Click here
+**9.14.** Click here
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/5807393b-4c37-4a91-b01f-338b928f8d04/ascreenshot.jpeg?tl_px=0,0&br_px=2752,1538&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=253,132)
 
@@ -979,7 +977,7 @@ There are two forms of live replication: *Cross-Region Replication (CRR)* and *S
 
 **10.3.** Buckets configured for object replication can be owned by the same AWS account or by different accounts.
 
-You can replicate objects to a single destination bucket or to multiple destination buckets.
+You can replicate objects to a single destination bucket or multiple destination buckets.
 
 The destination buckets can be in different AWS Regions or within the same Region as the source bucket.
 
@@ -995,6 +993,7 @@ Tip: **Replication can help you do the following:**
 ---
 ## Task 11 - Access Points
 
+<img src="https://github.com/user-attachments/assets/967ad973-e8bf-4d94-bd3b-90ea104e1dc6" alt="Learning on the Lab" width="240" height="100" style="vertical-align: middle;">
 
 **11.1.** Access Points in Amazon S3 are unique network endpoints that simplify data access for shared datasets in S3 buckets. They provide a flexible way to manage access to your S3 data at scale.
 

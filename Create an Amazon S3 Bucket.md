@@ -858,26 +858,22 @@ In the Management tab you will be able to configure the following
 
 Lifecycle rules run once per day.
 
-![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/c260bc2f-0480-45d9-b098-8d8748db5ef0/ascreenshot.jpeg?tl_px=0,164&br_px=2752,1703&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=464,277)
 
----
-<br>
-
-**9.3.** To create a lifecycle rule, click **Create lifecycle rule**
+To create a lifecycle rule, click **Create lifecycle rule**
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/ab84bfcb-0d90-4b03-a22c-9fed56d35fa2/ascreenshot.jpeg?tl_px=272,254&br_px=3024,1793&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=941,277)
 
 ---
 <br>
 
-**9.4.** Provide a descriptive name for the lifecycle rule.
+**9.3.** Provide a descriptive name for the lifecycle rule.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/67686d2d-c885-48d4-ac14-3e1b1e534f94/ascreenshot.jpeg?tl_px=253,27&br_px=3005,1566&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=524,277)
 
 ---
 <br>
 
-**9.5.** **Choose a rule scope** based on need. Options include
+**9.4.** **Choose a rule scope** based on need. Options include
 
 *Limit the scope of this rule using one or more filters* is used to limit to all objects with a specific prefix or tag.
 
@@ -888,63 +884,63 @@ Lifecycle rules run once per day.
 ---
 <br>
 
-**9.6.** Confirm as necessary
+**9.5.** Confirm as necessary
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/f44e6928-2201-419b-b146-1989ad66210c/ascreenshot.jpeg?tl_px=0,319&br_px=2752,1858&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=41,276)
 
 ---
 <br>
 
-**9.7.** **Lifecycle rule actions** are used to set the actions that this rule policy will perform.
+**9.6.** **Lifecycle rule actions** are used to set the actions that this rule policy will perform.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/1f1c35e2-5eec-407b-9b8e-0d455cfdae00/ascreenshot.jpeg?tl_px=0,147&br_px=2752,1686&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=3,277)
 
 ---
 <br>
 
-**9.8.** Confirm changes
+**9.7.** Confirm changes
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/85c27315-aea3-4b17-8303-d1a4c3b6ca78/ascreenshot.jpeg?tl_px=0,351&br_px=2752,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=38,295)
 
 ---
 <br>
 
-**9.9.** **Transition current version of objects between storage classes** is used to move the current version of objects.
+**9.8.** **Transition current version of objects between storage classes** is used to move the current version of objects.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/30e4238e-f8f3-401c-813e-05ea8ba7e85e/ascreenshot.jpeg?tl_px=0,351&br_px=2752,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=487,303)
 
 ---
 <br>
 
-**9.10.** **Transition noncurrent versions of objects between storage classes** is used to move the previous (noncurrent) versions of an object.
+**9.9.** **Transition noncurrent versions of objects between storage classes** is used to move the previous (noncurrent) versions of an object.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/f1f01679-d0de-436c-a93f-6eccb6528b40/ascreenshot.jpeg?tl_px=0,351&br_px=2752,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=368,284)
 
 ---
 <br>
 
-**9.11.** Set the days as appropriate based on needs. Remember that multiple versions will increase your usage of the storage service and your bill.
+**9.10.** Set the days as appropriate based on needs. Remember that multiple versions will increase your usage of the storage service and your bill.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/2c8ee6f1-72e1-4294-9404-873024b99ab9/ascreenshot.jpeg?tl_px=0,351&br_px=2752,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=412,318)
 
 ---
 <br>
 
-**9.12.** Click **Create rule**
+**9.11.** Click **Create rule**
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/b260bd04-546f-4f9a-8f5c-5cb5e7b8ebd7/ascreenshot.jpeg?tl_px=754,621&br_px=3023,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=1017,511)
 
 ---
 <br>
 
-**9.13.** The green banner confirms the rule was created.
+**9.12.** The green banner confirms the rule was created.
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/80a180ee-99eb-4ce4-b4c8-b4b19bca2d6a/ascreenshot.jpeg?tl_px=272,0&br_px=3024,1538&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=1050,178)
 
 ---
 <br>
 
-**9.14.** Click here
+**9.13.** Click here
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/5807393b-4c37-4a91-b01f-338b928f8d04/ascreenshot.jpeg?tl_px=0,0&br_px=2752,1538&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=253,132)
 

@@ -736,7 +736,8 @@ Object Ownership has three settings that you can use to control ownership of obj
 
 You see that bucket has the bucket owner enforcement applied to it.
 
-![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/3bac0f4b-c977-4b32-8e3a-7a05fcbe5eab/ascreenshot.jpeg?tl_px=0,0&br_px=3024,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=669,261)
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-11/a967968b-246c-4707-be36-2f0f347436d2/user_cropped_screenshot.jpeg?tl_px=0,0&br_px=3024,1890&force_format=jpeg&q=100&width=1120.0)
+
 
 ---
 <br>

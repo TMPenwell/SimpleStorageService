@@ -856,7 +856,7 @@ In the Management tab you will be able to configure the following
 
 **9.2.** Under Management, the **Lifecycle configuration** is used to create a set of rules that define actions that Amazon S3 applies to a group of objects. 
 
-Lifecycle rules run once per day.
+:calendar:<mark>Lifecycle rules run once per day.</mark>
 
 
 To create a lifecycle rule, click **Create lifecycle rule**
@@ -868,7 +868,8 @@ To create a lifecycle rule, click **Create lifecycle rule**
 
 **9.3.** Provide a descriptive name for the lifecycle rule.
 
-![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/67686d2d-c885-48d4-ac14-3e1b1e534f94/ascreenshot.jpeg?tl_px=253,27&br_px=3005,1566&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=524,277)
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-11/97a26caa-2681-4b3c-a394-4826299ea401/user_cropped_screenshot.jpeg?tl_px=0,0&br_px=3024,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=32,252)
+
 
 ---
 <br>

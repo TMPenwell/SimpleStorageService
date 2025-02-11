@@ -44,7 +44,7 @@ In the S3 console, select **Create bucket**
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/4e05ec7e-6138-4967-bc75-68fab7ff3d4d/ascreenshot.jpeg?tl_px=272,140&br_px=3024,1679&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=992,277)
 
-
+--- 
 **2.1.** Under **General Configuration** you can choose between *General purpose* and *Directory*.
 
 The General purpose one is used in most cases and is what this demo is using.
@@ -52,7 +52,9 @@ The General purpose one is used in most cases and is what this demo is using.
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/21bf48f5-4e96-4d26-847c-4d627551bbec/ascreenshot.jpeg?tl_px=0,218&br_px=2752,1757&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=485,277)
 
 ---
+
 <br>
+
 <img src="https://github.com/user-attachments/assets/967ad973-e8bf-4d94-bd3b-90ea104e1dc6" alt="Learning on the Lab" width="240" height="100" style="vertical-align: middle;">
 
 **2.2.** There are two bucket types. The General purpose one is used in most cases. Review the information below for more details on the difference between these two types of buckets.
@@ -125,7 +127,7 @@ Allows you to set up centralized controls to limit public access to resources th
 
 **2.7.** Decide if you want to enable **Bucket Versioning**
 
-Versioning is used to keep multiple versions of an object.
+Versioning is used to keep multiple versions of an object. This demo is leaving it as default right now. 
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/dcb7c6bd-fa93-43d5-9e2d-e9c5fa1cee10/ascreenshot.jpeg?tl_px=0,351&br_px=2752,1890&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=133,401)
 
@@ -163,7 +165,9 @@ Tags can be used to filter and search for resources, monitor cost and usage, and
 
 Tags are not required but is a best practice as part of building a Well-Architected Framework in AWS. Tags can be added when a resource is created or after it is launched.  We will not be adding tags in this demo.
 
-![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/4afa56fe-9e5d-491b-9ab7-e842a8a30645/ascreenshot.jpeg?tl_px=0,136&br_px=2752,1675&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=140,277)
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-11/d43b801a-923b-4e32-9425-e0af2ae03e55/user_cropped_screenshot.jpeg?tl_px=0,136&br_px=2752,1675&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=29,277)
+
+
 
 ---
 <br>
@@ -242,7 +246,7 @@ If the bucket was not successfully created, a red banner will appear instead. Th
 
  With the newly created bucket, we see there are tabs and other options to use this storage service.
 
-![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/8ca23fce-9f66-41b1-b61d-6ce6b129f695/ascreenshot.jpeg?tl_px=0,0&br_px=2752,1538&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=264,189)
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-11/f7a1f490-5a27-4e4f-90fb-44a66040c67a/user_cropped_screenshot.jpeg?tl_px=0,0&br_px=3024,1890&force_format=jpeg&q=100&width=1120.0)
 
 --- 
 
@@ -271,6 +275,9 @@ If the bucket was not successfully created, a red banner will appear instead. Th
 **3.4.** Files are added
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/3f841379-52b0-4573-9cec-1871ced47310/ascreenshot.jpeg?tl_px=0,145&br_px=2752,1684&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=464,276)
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-11/24ce5881-bf52-4f19-a602-715fd0bbc39a/user_cropped_screenshot.jpeg?tl_px=0,0&br_px=3024,1890&force_format=jpeg&q=100&width=1120.0)
+
 
 ---
 <br>

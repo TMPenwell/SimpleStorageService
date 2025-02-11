@@ -356,7 +356,8 @@ Some things to note about the Metadata Tables schema
 - Creation Date
 - Bucket versioning
 
-![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-06/a10b4003-9f8b-4f11-be75-a61b34fa4501/ascreenshot.jpeg?tl_px=0,114&br_px=2752,1653&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=260,277)
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2025-02-11/39d0573d-fdd6-40c0-9cdb-b52a9dcf4758/user_cropped_screenshot.jpeg?tl_px=0,0&br_px=3024,1890&force_format=jpeg&q=100&width=1120.0)
+
 
 ---
 <br>
